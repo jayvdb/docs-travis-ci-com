@@ -6,7 +6,7 @@ python:
   - "3.5.2"
 branches:
   only:
-  - master
+  - rv-rm-coala
 env:
   global:
     - PATH=$HOME/.local/user/bin:$PATH
