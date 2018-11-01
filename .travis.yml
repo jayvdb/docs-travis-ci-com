@@ -36,11 +36,11 @@ notifications:
   webhooks:
     https://docs.travis-ci.com/update_webhook_payload_doc
 install:
+  - npm install remark-cli@2 remark-lint
+  - npm install -g alex
   - rvm use 2.4.3 --install
   - bundle install --deployment
   - pip install coala-bears
-  - npm install remark-cli@2
-  - npm install -g alex
 
 script:
   - bundle exec rake test
