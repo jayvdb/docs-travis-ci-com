@@ -6,7 +6,7 @@ python:
   - "3.5.2"
 branches:
   only:
-  - rv-rm-coala
+  - re-add-markdownbear
 env:
   global:
     - PATH=$HOME/.local/user/bin:$PATH
@@ -45,4 +45,4 @@ install:
 script:
   - bundle exec rake test
   - xmllint --noout _site/feed.build-env-updates.xml
-  - coala --non-interactive --verbose Language
+  - coala --non-interactive --verbose

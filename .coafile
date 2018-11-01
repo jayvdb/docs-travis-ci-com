@@ -1,8 +1,10 @@
-[Default]
-bears  = MarkdownBear
+[all]
 files  = **/*.md
 ignore = node_modules/**,_site/**, vendor/**
 
-[Language]
+[all.syntax]
+bears  = MarkdownBear
+
+[all.Language]
 # Config in .alexrc
 bears  = AlexBear
